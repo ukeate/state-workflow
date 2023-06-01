@@ -1,0 +1,13 @@
+.idea/
+out/
+*.class
+target/
+build/
+.gradle/
+publish.bat
+*.iml
+*.jar
+
+.classpath
+.project
+.settings
