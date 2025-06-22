@@ -1,6 +1,5 @@
 package com.statecore.core.obj.tune;
 
-import jodd.util.StringUtil;
 
 public class CaseEl {
     private Case c;
@@ -12,8 +11,8 @@ public class CaseEl {
     }
 
     public Object getParam(String stateName, String paramName) {
-        if (stateName == null || stateName == ""
-                || paramName == null || paramName == "") {
+        if (stateName == null || stateName.isEmpty()
+                || paramName == null || paramName.isEmpty()) {
             return null;
         }
         State state = this.spec.stateNameMap.get(stateName);
