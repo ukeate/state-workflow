@@ -17,7 +17,7 @@ public class EventQueue {
         while (it.hasNext()) {
             Event ev = it.next();
             ev.handle(this.handler);
-            this.queue.remove();
+            it.remove();
         }
     }
 
