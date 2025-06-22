@@ -11,7 +11,7 @@ public class Token {
     public Node node;
 
     public Token(String color) {
-        if (color != null && color != "") {
+        if (color != null && !color.isEmpty()) {
             this.color = color;
         } else {
             this.color = UUID.randomUUID().toString();
